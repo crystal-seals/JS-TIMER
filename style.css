@@ -4,3 +4,10 @@ button {
   text-align: center;
   margin: 0.5em;
 }
+
+#results {
+  height: 3em;
+  width: 10%;
+  border: 5px solid black;
+  text-align: center;
+}

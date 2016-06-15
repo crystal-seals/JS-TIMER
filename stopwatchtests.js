@@ -15,3 +15,9 @@ test('start button responds', function(assert) {
   var expected = "The button works"
   assert.equal(1, 1, 'the start button responds')
 })
+
+test('start button injects response into results div', function(assert) {
+  var actual = stopWatch("button")
+  var expected = "The button works"
+  assert.equal(1, 1, 'the start button injects')
+})
