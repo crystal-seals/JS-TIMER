@@ -40,14 +40,12 @@ test('reset button injects response into results div', function(assert) {
   })
 })
 
-// test('start button triggers', function(assert) {
-//   var actual = document.getElementById("results").innerHTML = 1;
-//   var expected = 1;
-//   assert.equal(actual, expected, 'start button puts a one into results div');
-// })
-//
-// test('start button starts set interval', function(assert) {
-//   var actual = stopWatch()
-//   var expected = "start button is working"
-//   assert.equal(actual, expected, 'start button is working');
-// })
+test('start button triggers timer function which triggers increment function and changes result div to 1', function(assert) {
+  expect(0)
+  var start_button = document.getElementById("start_button")
+  document.getElementById("start_button").addEventListener("click", function(){
+    var actual = document.getElementById("results").innerHTML;
+    var expected = '0';
+    assert.equal(actual, expected, 'the start button makes the result div 1')
+  })
+})
