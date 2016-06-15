@@ -7,7 +7,7 @@ function startButton() {
   document.getElementById("start_button").addEventListener("click", function(){
     timer = setInterval(increment, 100);
     function increment() {
-      i++
+      i++;
       document.getElementById("results").innerHTML = i / 100;
     }
     document.getElementById("start_button").disabled = true;
