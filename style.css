@@ -11,3 +11,10 @@ button {
   border: 5px solid black;
   text-align: center;
 }
+
+#start_tester {
+  height: 3em;
+  width: 10%;
+  border: 5px solid black;
+  text-align: center;
+}
