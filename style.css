@@ -1,20 +1,32 @@
+#main {
+  text-align: center;
+}
+
 button {
   height: 3em;
   width: 10%;
-  text-align: center;
   margin: 0.5em;
+  border: none;
+  color: white;
+  text-transform: uppercase;
+}
+
+#start_button {
+  background-color: #2ECC71;
+}
+
+#stop_button {
+  background-color: #F89406;
+}
+
+#reset_button {
+  background-color: #D91E18;
 }
 
 #results {
   height: 3em;
+  line-height: 3em;
   width: 10%;
-  border: 5px solid black;
-  text-align: center;
-}
-
-#start_tester {
-  height: 3em;
-  width: 10%;
-  border: 5px solid black;
-  text-align: center;
+  background-color: #DADFE1;
+  margin: 0.5em auto;
 }

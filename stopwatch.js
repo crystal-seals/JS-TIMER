@@ -1,16 +1,17 @@
 var i = 1;
 var timer;
+var tester;
 var divide = 100;
 
 function startButton() {
   document.getElementById("start_button").addEventListener("click", function(){
-    temp = true;
     timer = setInterval(increment, 100);
     function increment() {
       i++
       document.getElementById("results").innerHTML = i / 100;
     }
     document.getElementById("start_button").disabled = true;
+    tester = true;
   });
 }
 
