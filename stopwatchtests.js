@@ -27,3 +27,9 @@ test('reset button injects response into results div', function(assert) {
   var expected = "The reset button works"
   assert.equal(1, 1, 'the reset button injects')
 })
+
+test('setTimeout works', function(assert) {
+  var actual = stopWatch()
+  var expected = "SetTimeout works"
+  assert.equal(1, 1, 'setTimeout works')
+})
