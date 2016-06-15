@@ -7,29 +7,47 @@ test('testing the testing environment', function(assert) {
 test('testing function is working', function(assert) {
   var actual = 1
   var expected = 1
-  assert.equal(1, 1, 'test environment is set up correctly')
+  assert.equal(actual, expected, 'test environment is set up correctly')
 })
 
 test('start button injects response into results div', function(assert) {
-  var actual = stopWatch("button")
-  var expected = "The start button works"
-  assert.equal(1, 1, 'the start button injects')
+  expect(0)
+  var start_button = document.getElementById("start_button")
+  document.getElementById("start_button").addEventListener("click", function(){
+    var actual = document.getElementById("results").innerHTML;
+    var expected = 'The start button works';
+    assert.equal(actual, expected, 'the start button injects')
+  })
 })
 
 test('stop button injects response into results div', function(assert) {
-  var actual = stopWatch("button")
-  var expected = "The stop button works"
-  assert.equal(1, 1, 'the stop button injects')
+  expect(0)
+  var stop_button = document.getElementById("stop_button")
+  document.getElementById("stop_button").addEventListener("click", function(){
+    var actual = document.getElementById("results").innerHTML;
+    var expected = "The stop button works"
+    assert.equal(actual, expected, 'the stop button injects')
+  })
 })
 
 test('reset button injects response into results div', function(assert) {
-  var actual = stopWatch("button")
-  var expected = "The reset button works"
-  assert.equal(1, 1, 'the reset button injects')
+  expect(0)
+  var reset_button = document.getElementById("reset_button")
+  document.getElementById("reset_button").addEventListener("click", function(){
+    var actual = document.getElementById("results").innerHTML;
+    var expected = "The reset button works"
+    assert.equal(actual, expected, 'the reset button injects')
+  })
 })
 
-test('setTimeout works', function(assert) {
-  var actual = stopWatch()
-  var expected = "SetTimeout works"
-  assert.equal(1, 1, 'setTimeout works')
-})
+// test('start button triggers', function(assert) {
+//   var actual = document.getElementById("results").innerHTML = 1;
+//   var expected = 1;
+//   assert.equal(actual, expected, 'start button puts a one into results div');
+// })
+//
+// test('start button starts set interval', function(assert) {
+//   var actual = stopWatch()
+//   var expected = "start button is working"
+//   assert.equal(actual, expected, 'start button is working');
+// })
