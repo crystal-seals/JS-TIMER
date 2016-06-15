@@ -1,3 +1,6 @@
 function stopWatch(time) {
-  return time;
+  document.getElementById("start_button").addEventListener("click", function(){
+    document.getElementById("start_button").innerHTML = "The button works";
+});
+
 }
