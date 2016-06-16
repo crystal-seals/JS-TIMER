@@ -33,6 +33,13 @@
   background-color: #D91E18;
 }
 
+#modal {
+  border: black solid 5px;
+  height: 8em;
+  width: 8em;
+  display: none;
+}
+
 .results_box {
   height: 3em;
   line-height: 3em;
