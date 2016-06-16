@@ -12,6 +12,7 @@
 .horizontal_grid {
   display: flex;
   margin: auto auto;
+  justify-content: center;
 }
 
 button {
@@ -25,10 +26,12 @@ button {
 
 #stopwatch_start_button, #countdown_start_button {
   background-color: #2ECC71;
+  margin-right: 1em;
 }
 
 #stopwatch_stop_button, #countdown_stop_button {
   background-color: #F89406;
+  margin-left: 2em;
 }
 
 #stopwatch_reset_button, #countdown_reset_button {
