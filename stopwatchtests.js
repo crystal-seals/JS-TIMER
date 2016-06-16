@@ -16,7 +16,7 @@ test('time is initialised to zero', function(assert) {
   assert.equal(time, '0.00');
 });
 
-test('start triggers timer', function(assert) {
+test('start stopwatch button triggers timer', function(assert) {
   var done = assert.async();
   stopwatch_start_button.click();
 
@@ -27,7 +27,7 @@ test('start triggers timer', function(assert) {
   }, 300);
 });
 
-test('stop pauses timer', function(assert) {
+test('stop stopwatch button pauses timer', function(assert) {
   var done = assert.async();
   stopwatch_start_button.click();
 
@@ -44,7 +44,7 @@ test('stop pauses timer', function(assert) {
   }, 300);
 });
 
-test('reset sets a paused timer back to zero', function(assert) {
+test('reset stopwatch button sets a paused timer back to zero', function(assert) {
   document.getElementById('results').innerHTML = '9.45';
   stopwatch_reset_button.click();
   var time = document.getElementById('results').innerHTML;
@@ -52,7 +52,7 @@ test('reset sets a paused timer back to zero', function(assert) {
 });
 
 
-test('reset stops a running timer and sets it back to zero', function(assert) {
+test('reset stopwatch button stops a running timer and sets it back to zero', function(assert) {
   var done = assert.async();
   stopwatch_start_button.click();
   setTimeout(function() {
@@ -63,7 +63,7 @@ test('reset stops a running timer and sets it back to zero', function(assert) {
   }, 300);
 });
 
-test('countdown button starts countdown going', function(assert) {
+test('start countdown button starts countdown going', function(assert) {
   var done = assert.async();
   countdown_reset_button.click();
 
@@ -74,7 +74,7 @@ test('countdown button starts countdown going', function(assert) {
   }, 300);
 });
 
-test('stop button stops countdown', function(assert) {
+test('stop countdown button stops countdown', function(assert) {
   var done = assert.async();
   countdown_start_button.click();
 
@@ -91,7 +91,7 @@ test('stop button stops countdown', function(assert) {
 });
 
 
-test('reset button resets countdown timer', function(assert) {
+test('reset countdown button resets countdown timer', function(assert) {
   document.getElementById('countdown_results').innerHTML = '5.00';
   countdown_reset_button.click();
   var time2 = document.getElementById('countdown_results').innerHTML;
