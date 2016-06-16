@@ -11,12 +11,25 @@
   <body style='margin: 0 1em;'>
     <div id='main'>
       <h1>Stopwatch</h1>
-      <button type="button" id="start_button">Start</button>
-      <button type="button" id="stop_button">Stop</button>
-      <button type="button" id="reset_button">Reset</button>
-      <div class="results_box" id="results">0.00</div>
-      <button type="button" id="countdown_button">Countdown</button>
-      <div class="results_box" id="countdown_results">240.00</div>
+      <div class="horizontal_grid">
+          <div class="vertical_grid">
+            <button type="button" id="stopwatch_start_button">Stopwatch</button>
+            <button type="button" id="countdown_start_button">Countdown</button>
+          </div>
+          <div class="vertical_grid">
+            <div class="results_box" id="results">0.00</div>
+            <div class="results_box" id="countdown_results">240.00</div>
+          </div>
+          <div class="vertical_grid">
+            <button type="button" id="stopwatch_stop_button">Stop</button>
+            <button type="button" id="countdown_reset_button">Reset</button>
+          <div>
+          <div class="vertical_grid">
+            <button type="button" id="countdown_stop_button">Stop</button>
+            <button type="button" id="stopwatch_reset_button">Reset</button>
+          </div>
+        </div>
+      </div>
     </div>
     <div id="qunit"></div>
     <div id="qunit-fixture"></div>

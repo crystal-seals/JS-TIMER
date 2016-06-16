@@ -1,32 +1,44 @@
 #main {
   text-align: center;
+  width: 50%;
+  margin: auto auto;
+}
+
+.vertical_grid {
+  display: flex;
+  flex-direction: column;
+}
+
+.horizontal_grid {
+  display: flex;
+  margin: auto auto;
 }
 
 button {
   height: 3em;
-  width: 10%;
+  width: 8em;
   margin: 0.5em;
   border: none;
   color: white;
   text-transform: uppercase;
 }
 
-#start_button {
+#stopwatch_start_button, #countdown_start_button {
   background-color: #2ECC71;
 }
 
-#stop_button {
+#stopwatch_stop_button, #countdown_stop_button {
   background-color: #F89406;
 }
 
-#reset_button {
+#stopwatch_reset_button, #countdown_reset_button {
   background-color: #D91E18;
 }
 
 .results_box {
   height: 3em;
   line-height: 3em;
-  width: 10%;
+  width: 8em;
   background-color: #DADFE1;
   margin: 0.5em auto;
 }
