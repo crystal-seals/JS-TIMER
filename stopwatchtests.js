@@ -13,7 +13,7 @@ test('testing the testing environment', function(assert) {
 
 test('time is initialised to zero', function(assert) {
   var time = document.getElementById('results').innerHTML;
-  assert.equal(time, '0.00');
+  assert.equal(time, '0.00', 'time is initialised to zero');
 });
 
 test('start stopwatch button triggers timer', function(assert) {
@@ -22,7 +22,7 @@ test('start stopwatch button triggers timer', function(assert) {
 
   setTimeout(function() {
     var actual = document.getElementById('results').innerHTML;
-    assert.ok(actual > 0.00);
+    assert.ok(actual > 0.00, 'start stopwatch button triggers timer');
     done();
   }, 300);
 });
@@ -37,7 +37,7 @@ test('stop stopwatch button pauses timer', function(assert) {
 
     setTimeout(function() {
       var time2 = document.getElementById('results').innerHTML;
-      assert.equal(time1, time2);
+      assert.equal(time1, time2), 'stop stopwatch button pauses timer';
 
       done();
     }, 300);
@@ -48,7 +48,7 @@ test('reset stopwatch button sets a paused timer back to zero', function(assert)
   document.getElementById('results').innerHTML = '9.45';
   stopwatch_reset_button.click();
   var time = document.getElementById('results').innerHTML;
-  assert.equal(time, 0.00);
+  assert.equal(time, 0.00), 'reset stopwatch button sets a paused timer back to zero';
 });
 
 
@@ -58,7 +58,7 @@ test('reset stopwatch button stops a running timer and sets it back to zero', fu
   setTimeout(function() {
     stopwatch_reset_button.click();
     var time = document.getElementById('results').innerHTML;
-    assert.equal(time, 0.00);
+    assert.equal(time, 0.00), 'reset stopwatch button stops a running timer and sets it back to zero';
     done();
   }, 300);
 });
@@ -95,5 +95,5 @@ test('reset countdown button resets countdown timer', function(assert) {
   document.getElementById('countdown_results').innerHTML = '5.00';
   countdown_reset_button.click();
   var time2 = document.getElementById('countdown_results').innerHTML;
-  assert.equal(time2, 240.00, "gets set back to 240.00");
+  assert.equal(time2, 240.00, "countdown button is set back to 240.00");
 });
