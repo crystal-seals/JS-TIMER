@@ -3,6 +3,7 @@ var j = 240000;
 var countdown_timer;
 var stopwatch_timer;
 var divide = 100;
+var modal = document.getElementById("modal");
 
 function startButton() {
   document.getElementById("stopwatch_start_button").addEventListener("click", function(){
@@ -36,7 +37,15 @@ function countdownButton() {
   document.getElementById("countdown_start_button").addEventListener("click", function(){
     countdown_timer = setInterval(increment, 10);
     function increment() {
-      j = j -10 ;
+      j=j-10;
+      if (j < 235000) {
+        j = 0;
+        document.getElementById("modal").style.display= "block";
+        clearInterval(countdown_timer);
+        j = 240000;
+        document.getElementById("countdown_results").innerHTML = "240.00";
+        document.getElementById("countdown_start_button").disabled = false;
+      };
       document.getElementById("countdown_results").innerHTML = (j / 1000).toFixed(2);
     }
       document.getElementById("countdown_start_button").disabled = true;
