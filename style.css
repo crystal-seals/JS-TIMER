@@ -1,7 +1,11 @@
 #main {
   text-align: center;
-  width: 50%;
-  margin: auto auto;
+  width: 40em;
+  margin: 3em auto;
+  padding-bottom: 1em;
+  padding-top: 0.2em;
+  background-color: #ECF0F1;
+  border-radius: 1em;
 }
 
 .vertical_grid {
@@ -35,6 +39,7 @@
   width: 8em;
   background-color: #DADFE1;
   margin: 0.5em auto;
+  border-radius: 0.5em;
 }
 
 button {
@@ -44,9 +49,10 @@ button {
   border: none;
   color: white;
   text-transform: uppercase;
+  border-radius: 0.5em;
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 700px) {
   button {
     width: 5em;
   }
@@ -58,5 +64,9 @@ button {
   }
   #stopwatch_stop_button, #countdown_stop_button {
     margin-left: 1em;
+  }
+  #main {
+    width: 30em;
+    margin: 0.5em auto;
   }
 }
