@@ -1,11 +1,12 @@
 var i = 1;
 var j = 240000;
-var timer;
+var countdown_timer;
+var stopwatch_timer;
 var divide = 100;
 
 function startButton() {
   document.getElementById("stopwatch_start_button").addEventListener("click", function(){
-    timer = setInterval(increment, 10);
+    stopwatch_timer = setInterval(increment, 10);
     function increment() {
       i+=10;
       document.getElementById("results").innerHTML = (i / 1000).toFixed(2);
@@ -16,14 +17,14 @@ function startButton() {
 
 function stopButton() {
   document.getElementById("stopwatch_stop_button").addEventListener("click", function(){
-    clearInterval(timer);
+    clearInterval(stopwatch_timer);
     document.getElementById("stopwatch_start_button").disabled = false;
   });
 }
 
 function resetButton() {
   document.getElementById("stopwatch_reset_button").addEventListener("click", function(){
-    clearInterval(timer);
+    clearInterval(stopwatch_timer);
     document.getElementById("results").innerHTML = "0.00";
     document.getElementById("stopwatch_start_button").disabled = false;
   });
@@ -32,7 +33,7 @@ function resetButton() {
 
 function countdownButton() {
   document.getElementById("countdown_start_button").addEventListener("click", function(){
-    timer = setInterval(increment, 10);
+    countdown_timer = setInterval(increment, 10);
     function increment() {
       j = j - 10;
       document.getElementById("countdown_results").innerHTML = (j / 1000).toFixed(2);
@@ -45,14 +46,14 @@ function countdownButton() {
 
 function stopCountdownButton() {
   document.getElementById("countdown_stop_button").addEventListener("click", function(){
-    clearInterval(timer);
+    clearInterval(countdown_timer);
     document.getElementById("countdown_start_button").disabled = false;
   });
 }
 
 function resetCountdownButton() {
     document.getElementById("countdown_reset_button").addEventListener("click", function(){
-    clearInterval(timer);
+    clearInterval(countdown_timer);
     document.getElementById("countdown_results").innerHTML = "240.00";
     document.getElementById("countdown_start_button").disabled = false;
 
@@ -66,5 +67,5 @@ stopButton();
 resetButton();
 
 countdownButton()
-resetCountdownButton();
 stopCountdownButton();
+resetCountdownButton();
