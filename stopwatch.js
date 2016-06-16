@@ -5,6 +5,11 @@ var stopwatch_timer;
 var divide = 100;
 var modal = document.getElementById("modal");
 
+document.getElementById("modal_button").addEventListener("click", function(){
+  document.getElementById("modal").style.display = "none";
+  // document.getElementById("overlay").style.display = "none";
+});
+
 function startButton() {
   document.getElementById("stopwatch_start_button").addEventListener("click", function(){
     stopwatch_timer = setInterval(increment, 10);
@@ -41,6 +46,7 @@ function countdownButton() {
       if (j < 235000) {
         j = 0;
         document.getElementById("modal").style.display= "block";
+        // document.getElementById("overlay").style.display= "block";
         clearInterval(countdown_timer);
         j = 240000;
         document.getElementById("countdown_results").innerHTML = "240.00";

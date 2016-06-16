@@ -6,6 +6,7 @@
   padding-top: 0.2em;
   background-color: #ECF0F1;
   border-radius: 1em;
+  position: relative;
 }
 
 .vertical_grid {
@@ -31,13 +32,6 @@
 
 #stopwatch_reset_button, #countdown_reset_button {
   background-color: #D91E18;
-}
-
-#modal {
-  border: black solid 5px;
-  height: 8em;
-  width: 8em;
-  display: none;
 }
 
 .results_box {
@@ -76,4 +70,39 @@ button {
     width: 30em;
     margin: 0.5em auto;
   }
+}
+
+#modal {
+  background-color: #86E2D5;
+  height: 8em;
+  width: 38em;
+  border-radius: 0.5em;
+  margin: auto auto;
+  text-align: center;
+  z-index: 10;
+  top: 5em;
+  left: 1em;
+  position: absolute;
+}
+
+#modal p {
+  line-height: 7em;
+}
+
+#modal_button {
+  float: right;
+  margin: 0.5em;
+  cursor: pointer;
+}
+
+
+/* Add Animation */
+@-webkit-keyframes animatetop {
+   from {top: -300px; opacity: 0}
+   to {top: 0; opacity: 1}
+}
+
+@keyframes animatetop {
+   from {top: -300px; opacity: 0}
+   to {top: 0; opacity: 1}
 }
