@@ -53,6 +53,35 @@ button {
   border-radius: 0.5em;
 }
 
+#modal {
+  border-top: solid 1em #86E2D5;
+  background-color: white;
+  height: 9em;
+  width: 38em;
+  border-radius: 0.5em;
+  margin: auto auto;
+  text-align: center;
+  z-index: 10;
+  padding-top: 0.5em;
+  top: 4.5em;
+  left: 1em;
+  position: absolute;
+  box-sizing: border-box;
+}
+
+p {
+  font-size: 1.5em;
+  color: #394756;
+}
+
+#modal_button {
+  background-color: #86E2D5;
+  position: relative;
+  width: 6em;
+  height: 2.5em;
+  margin-top: -0.5em;
+}
+
 @media screen and (max-width: 700px) {
   button {
     width: 5em;
@@ -70,40 +99,8 @@ button {
     width: 30em;
     margin: 0.5em auto;
   }
-}
-
-#modal {
-  background-color: #86E2D5;
-  height: 8em;
-  width: 38em;
-  border-radius: 0.5em;
-  margin: auto auto;
-  text-align: center;
-  z-index: 10;
-  top: 5em;
-  left: 1em;
-  position: absolute;
-}
-
-#modal p {
-  line-height: 7em;
-  margin-left: 1.5em;
-}
-
-#modal_button {
-  float: right;
-  margin: 0.5em;
-  cursor: pointer;
-}
-
-
-/* Add Animation */
-@-webkit-keyframes animatetop {
-   from {top: -300px; opacity: 0}
-   to {top: 0; opacity: 1}
-}
-
-@keyframes animatetop {
-   from {top: -300px; opacity: 0}
-   to {top: 0; opacity: 1}
+  #modal {
+    width: 29em;
+    left: 0.5em;
+  }
 }
