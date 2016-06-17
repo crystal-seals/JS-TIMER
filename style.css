@@ -67,6 +67,7 @@ button {
   left: 1em;
   position: absolute;
   box-sizing: border-box;
+  display: none;
 }
 
 p {

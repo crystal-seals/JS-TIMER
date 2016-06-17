@@ -7,7 +7,6 @@ var modal = document.getElementById("modal");
 
 document.getElementById("modal_button").addEventListener("click", function(){
   document.getElementById("modal").style.display = "none";
-  // document.getElementById("overlay").style.display = "none";
 });
 
 function startButton() {
