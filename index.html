@@ -18,7 +18,7 @@
             </div>
             <div class="vertical_grid">
               <div class="results_box" id="results">0.00</div>
-              <div class="results_box" id="countdown_results">240.00</div>
+              <div class="results_box" id="countdown_results">0.00</div>
             </div>
             <div class="vertical_grid">
               <button type="button" id="stopwatch_stop_button">Stop</button>
@@ -29,9 +29,14 @@
               <button type="button" id="countdown_reset_button">Reset</button>
             </div>
         </div>
-        <div id="modal">
+        <div id="countdown_finished_modal">
             <p>Your countdown is done</p>
             <button type="button" id="modal_button">Got it!</button>
+        </div>
+        <div id="countdown_start_modal">
+            <p>How many seconds do you want to countdown from?</p>
+            <input type="text" id="countdown_time">
+            <button type="button" id="modal_start_button">Got it!</button>
         </div>
       </div>
     <div id="qunit"></div>
