@@ -8,5 +8,5 @@ A stopwatch/countdown timer built in vanilla JS, HTML and CSS to practice TDD.
 * Responsive design
 
 ##Stretch Goals
-* Allow user to set time on countdown timer
+* Allow user to set time on countdown timer - Achieved!
 * Account for minutes in time displayed
