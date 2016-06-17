@@ -102,7 +102,7 @@ test('check to see if modal has been triggered', function(assert) {
   var done = assert.async();
   countdown_start_button.click();
   setTimeout(function() {
-      var a = document.getElementById('modal').style.display;
+      var a = document.getElementById('countdown_finished_modal').style.display;
       assert.equal(a, "block", "var a equals block");
       done();
   }, 10000);

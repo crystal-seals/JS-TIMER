@@ -54,6 +54,7 @@ button {
 }
 
 #countdown_finished_modal, #countdown_start_modal {
+  box-sizing: border-box;
   border-top: solid 1em #86E2D5;
   background-color: white;
   height: 9em;
@@ -66,13 +67,13 @@ button {
   top: 4.5em;
   left: 1em;
   position: absolute;
-  box-sizing: border-box;
   display: none;
 }
 
 p {
   font-size: 1.5em;
   color: #394756;
+  margin-top: 0.5em;
 }
 
 #modal_button, #modal_start_button {
@@ -81,6 +82,22 @@ p {
   width: 6em;
   height: 2.5em;
   margin-top: -0.5em;
+}
+
+#modal_start_button {
+  width: 4em;
+  border-radius: 0.5em;
+  height: 2.5em;
+  margin: 0 1em;
+  padding: 0;
+}
+
+input {
+  background-color: #ECF0F1;
+  border: none;
+  border-radius: 0.5em;
+  height: 2.5em;
+  padding: 1em;
 }
 
 @media screen and (max-width: 700px) {
@@ -100,8 +117,12 @@ p {
     width: 30em;
     margin: 0.5em auto;
   }
-  #modal {
+  #countdown_start_modal, #countdown_finished_modal {
+    padding-top: 0;
     width: 29em;
     left: 0.5em;
+  }
+  input, #modal_start_button {
+    margin-top: -5em;
   }
 }
