@@ -53,7 +53,7 @@ button {
   border-radius: 0.5em;
 }
 
-#modal {
+#countdown_finished_modal, #countdown_start_modal {
   border-top: solid 1em #86E2D5;
   background-color: white;
   height: 9em;
@@ -67,6 +67,7 @@ button {
   left: 1em;
   position: absolute;
   box-sizing: border-box;
+  display: none;
 }
 
 p {
@@ -74,7 +75,7 @@ p {
   color: #394756;
 }
 
-#modal_button {
+#modal_button, #modal_start_button {
   background-color: #86E2D5;
   position: relative;
   width: 6em;
