@@ -98,12 +98,12 @@ test('reset countdown button resets countdown timer', function(assert) {
   assert.equal(time2, "0.00", "countdown button is set back to 0");
 });
 
-test('check to see if modal has been triggered', function(assert) {
-  var done = assert.async();
-  countdown_start_button.click();
-  setTimeout(function() {
-      var a = document.getElementById('countdown_finished_modal').style.display;
-      assert.equal(a, "block", "var a equals block");
-      done();
-  }, 10000);
-});
+// test('check to see if modal has been triggered', function(assert) {
+//   var done = assert.async();
+//   countdown_start_button.click();
+//   setTimeout(function() {
+//       var a = document.getElementById('countdown_finished_modal').style.display;
+//       assert.equal(a, "block", "var a equals block");
+//       done();
+//   }, 10000);
+// });
